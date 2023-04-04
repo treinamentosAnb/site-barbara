@@ -46,8 +46,8 @@ import styled from 'styled-components'
     
 
       @media(min-width: 350px){
-        height: 54px;
-        margin-top: -58px;   
+        height: 53px;
+        margin-top: -59px;   
         
   } 
       @media(min-width: 520px){
