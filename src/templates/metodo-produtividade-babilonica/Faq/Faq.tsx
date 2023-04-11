@@ -1,7 +1,13 @@
 import { useState } from 'react'
 import * as S from './styled'
 
-export const Faq = ({ answer, question }) => {
+export const Faq = ({
+  answer,
+  question
+}: {
+  answer: string
+  question: string
+}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
