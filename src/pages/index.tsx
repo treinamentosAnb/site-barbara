@@ -3,12 +3,10 @@ import { useEffect } from 'react'
 
 export default function Home() {
   const router = useRouter()
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     router.push('/metodo-produtividade-babilonica')
   }, [])
 
-  return (
-    <main></main>
-  )
+  return <main></main>
 }
