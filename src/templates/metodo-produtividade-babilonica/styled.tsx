@@ -8,18 +8,22 @@ export const Container = styled.div`
   left: 0;
 
   img {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
+    position: static !important;
   }
 
-  @media (min-width: 700px) {
+  /* @media (min-width: 700px) {
     position: relative;
-  }
+  } */
 `
 
 export const DesktopContent = styled.div`
   display: none !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
   @media (min-width: 768px) {
     display: block !important;
@@ -88,6 +92,7 @@ export const QuestionsAndAnswersContainer = styled.div`
   width: 100%;
   background-color: #0d0d0d;
   margin-top: -10px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
