@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 70%;
   margin: 10px;
-  background-color: #030303;
+  background-color: #010101;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -34,6 +34,7 @@ export const QuestionContainer = styled.div<{ isOpen: boolean }>`
   }
 
   && img {
+    margin-left: 10px;
     transition: all ease-in 0.3s;
     width: 20px;
     height: 20px;
