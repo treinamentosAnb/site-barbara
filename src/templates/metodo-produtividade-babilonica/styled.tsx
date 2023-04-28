@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  @import url('https://fonts.cdnfonts.com/css/lufga');
+  font-family: 'Lufga', sans-serif;
+
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -8,15 +11,8 @@ export const Container = styled.div`
   left: 0;
 
   img {
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
     position: static !important;
   }
-
-  /* @media (min-width: 700px) {
-    position: relative;
-  } */
 `
 
 export const DesktopContent = styled.div`
@@ -39,24 +35,24 @@ export const MobileContent = styled.div`
 `
 
 export const ButtonContainer = styled.div`
-  height: 28px;
-  width: 33%;
+  height: 68px;
+  width: 55%;
   display: flex;
   justify-content: center;
-  margin: -33px auto 0;
+  margin: -72px auto 0;
+  position: relative;
   cursor: pointer;
 
-  @media (min-width: 350px) {
-    height: 40px;
-    margin-top: -45px;
-  }
   @media (min-width: 520px) {
-    height: 50px;
-    margin-top: -55px;
+    height: 68px;
+    margin-top: -72px;
   }
   @media (min-width: 660px) {
-    height: 58px;
-    margin-top: -62px;
+    height: 94px;
+    margin-top: -98px;
+  }
+  @media (min-width: 768px) {
+    width: 35%;
   }
   @media (min-width: 870px) {
     height: 64px;
@@ -78,11 +74,24 @@ export const ButtonContainer = styled.div`
 
 export const Button = styled.a`
   width: 100%;
-  height: 59%;
+  height: 75%;
+  top: 12px;
+  position: absolute;
+
+  @media (min-width: 690px) {
+    top: -12px;
+  }
 `
 
-export const FirstButton = styled(Button)`
-  height: 75%;
+export const BigButton = styled(Button)`
+  @media (min-width: 460px) {
+    top: -20px;
+    height: 120%;
+  }
+  @media (min-width: 690px) {
+    top: -43px;
+    height: 140%;
+  }
 `
 
 export const QuestionsAndAnswersContainer = styled.div`
@@ -90,14 +99,54 @@ export const QuestionsAndAnswersContainer = styled.div`
   font-family: 'Lufga', sans-serif;
 
   width: 100%;
-  background-color: #0d0d0d;
+  background-color: #010101;
   margin-top: -10px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1 {
+  h1,
+  p {
     color: #fff;
+  }
+
+  p {
+    margin-top: 25px;
+    font-size: 12px;
+  }
+`
+
+export const VideoContainer = styled.div`
+  width: 90%;
+  height: 195px;
+  position: relative;
+  margin: -200px auto 0;
+  cursor: pointer;
+
+  @media (min-width: 425px) {
+    height: 230px;
+    margin-top: -234px;
+  }
+
+  @media (min-width: 520px) {
+    height: 280px;
+    margin-top: -284px;
+  }
+
+  @media (min-width: 640px) {
+    height: 340px;
+    margin-top: -344px;
+  }
+
+  @media (min-width: 768px) {
+    width: 70%;
+    height: 402px;
+    margin-top: -406px;
+  }
+
+  @media (min-width: 1270px) {
+    height: 446px;
+    margin-top: -450px;
   }
 `
