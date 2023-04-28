@@ -19,9 +19,9 @@ const VideoModal = ({
       <S.Overlay onClick={onClose} />
       <S.Content>
         <span>Para fechar basta clicar fora do video</span>
-        <video autoPlay controls ref={videoRef}>
+        {/* <video autoPlay controls ref={videoRef}>
           <source src="video-lp.mp4" />
-        </video>
+        </video> */}
       </S.Content>
     </S.Container>
   )
