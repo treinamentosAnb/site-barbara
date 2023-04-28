@@ -95,6 +95,9 @@ export const BigButton = styled(Button)`
 `
 
 export const QuestionsAndAnswersContainer = styled.div`
+  @import url('https://fonts.cdnfonts.com/css/lufga');
+  font-family: 'Lufga', sans-serif;
+
   width: 100%;
   background-color: #010101;
   margin-top: -10px;
