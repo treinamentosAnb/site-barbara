@@ -12,7 +12,7 @@ export const Faq = ({
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <S.Container onClick={() => setIsOpen(!isOpen)}>
+    <S.FaqContainer onClick={() => setIsOpen(!isOpen)}>
       <S.QuestionContainer isOpen={isOpen}>
         <span>{question}</span>
         <Image src="arrow.svg" width={20} height={20} alt={''} />
@@ -20,6 +20,6 @@ export const Faq = ({
       <S.AnswerContainer isOpen={isOpen}>
         <span>{answer}</span>
       </S.AnswerContainer>
-    </S.Container>
+    </S.FaqContainer>
   )
 }

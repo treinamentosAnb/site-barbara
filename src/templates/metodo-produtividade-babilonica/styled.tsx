@@ -151,7 +151,7 @@ export const VideoContainer = styled.div`
   }
 `
 
-export const Container = styled.div`
+export const FaqContainer = styled.div`
   width: 70%;
   margin: 10px;
   background-color: #010101;
