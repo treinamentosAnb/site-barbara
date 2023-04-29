@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import * as S from './styled'
+import Image from 'next/image'
 
 export const Faq = ({
   answer,
@@ -14,7 +15,7 @@ export const Faq = ({
     <S.Container onClick={() => setIsOpen(!isOpen)}>
       <S.QuestionContainer isOpen={isOpen}>
         <span>{question}</span>
-        <img src="arrow.svg" />
+        <Image src="arrow.svg" width={20} height={20} alt={''} />
       </S.QuestionContainer>
       <S.AnswerContainer isOpen={isOpen}>
         <span>{answer}</span>

@@ -36,8 +36,6 @@ export const QuestionContainer = styled.div<{ isOpen: boolean }>`
   && img {
     margin-left: 10px;
     transition: all ease-in 0.3s;
-    width: 20px;
-    height: 20px;
     transform: ${(props) =>
       props.isOpen ? 'rotate(90deg)' : 'rotate(270deg)'};
   }
