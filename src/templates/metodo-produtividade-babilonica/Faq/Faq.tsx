@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import * as S from './styled'
+import * as S from '../styled'
 import Image from 'next/image'
 
 export const Faq = ({
