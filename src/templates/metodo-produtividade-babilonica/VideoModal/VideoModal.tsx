@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import * as S from './styled'
+import * as S from '../styled'
 const VideoModal = ({
   isOpen,
   handleClose
@@ -15,7 +15,7 @@ const VideoModal = ({
   }
 
   return (
-    <S.Container isOpen={isOpen}>
+    <S.ModalContainer isOpen={isOpen}>
       <S.Overlay onClick={onClose} />
       <S.Content>
         <span>Para fechar basta clicar fora do video</span>
@@ -23,7 +23,7 @@ const VideoModal = ({
           <source src="video-lp.mp4" />
         </video> */}
       </S.Content>
-    </S.Container>
+    </S.ModalContainer>
   )
 }
 

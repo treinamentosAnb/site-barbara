@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import { useState } from 'react'
-import { Faq } from './Faq/Faq'
+import Faq from './Faq'
 import { questionsAndAnswers } from './questionsAndAnswers'
 import * as S from './styled'
 import VideoModal from './VideoModal'

@@ -1,17 +1,11 @@
 import { useState } from 'react'
-import * as S from './styled'
+import * as S from '../styled'
 
-export const Faq = ({
-  answer,
-  question
-}: {
-  answer: string
-  question: string
-}) => {
+const Faq = ({ answer, question }: { answer: string; question: string }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <S.Container onClick={() => setIsOpen(!isOpen)}>
+    <S.FaqContainer onClick={() => setIsOpen(!isOpen)}>
       <S.QuestionContainer isOpen={isOpen}>
         <span>{question}</span>
         <img src="arrow.svg" />
@@ -19,6 +13,8 @@ export const Faq = ({
       <S.AnswerContainer isOpen={isOpen}>
         <span>{answer}</span>
       </S.AnswerContainer>
-    </S.Container>
+    </S.FaqContainer>
   )
 }
+
+export default Faq
