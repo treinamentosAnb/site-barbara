@@ -1,25 +1,25 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image from 'next/image'
 import { useState } from 'react'
-import { Faq } from './Faq/Faq'
+import Faq from './Faq'
 import { questionsAndAnswers } from './questionsAndAnswers'
 import * as S from './styled'
-// import VideoModal from './VideoModal'
+import VideoModal from './VideoModal'
 
 const MetodoProdutividadeBabilonica = () => {
   const externalLink = 'https://pay.kiwify.com.br/KsgR8E7'
   const supportLink =
     'https://wa.me/558499871905?text=Ol%C3%A1%21+Gostaria+de+tirar+algumas+d%C3%BAvidas+sobre+os+treinamentos+da+Babi.'
 
-  // const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
 
   return (
     <S.Container>
-      {/* <VideoModal isOpen={openModal} handleClose={() => setOpenModal(false)} /> */}
+      <VideoModal isOpen={openModal} handleClose={() => setOpenModal(false)} />
       <S.DesktopContent>
         <Image src="/desktop-1.png" alt={''} priority fill />
 
-        <S.VideoContainer />
+        <S.VideoContainer onClick={() => setOpenModal(true)} />
 
         <Image src="/desktop-2.png" alt={''} priority fill />
         <S.ButtonContainer>
@@ -44,7 +44,7 @@ const MetodoProdutividadeBabilonica = () => {
 
       <S.MobileContent>
         <Image src="/mobile-1.png" alt={''} priority fill />
-        <S.VideoContainer />
+        <S.VideoContainer onClick={() => setOpenModal(true)} />
 
         <Image src="/mobile-2.png" alt={''} priority fill />
         <S.ButtonContainer>
@@ -72,7 +72,7 @@ const MetodoProdutividadeBabilonica = () => {
         {questionsAndAnswers.map((item, index) => (
           <Faq question={item.question} answer={item.answer} key={index} />
         ))}
-        {/* <p> Bárbara Dolbeth 2023 © todos os direitos reservados</p> */}
+        <p> Bárbara Dolbeth 2023 © todos os direitos reservados</p>
       </S.QuestionsAndAnswersContainer>
     </S.Container>
   )

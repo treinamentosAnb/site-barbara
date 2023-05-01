@@ -2,13 +2,7 @@ import { useState } from 'react'
 import * as S from '../styled'
 import Image from 'next/image'
 
-export const Faq = ({
-  answer,
-  question
-}: {
-  answer: string
-  question: string
-}) => {
+const Faq = ({ answer, question }: { answer: string; question: string }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -23,3 +17,5 @@ export const Faq = ({
     </S.FaqContainer>
   )
 }
+
+export default Faq
