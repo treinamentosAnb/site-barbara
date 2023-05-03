@@ -10,7 +10,6 @@ const VideoModal = ({
   const videoRef: any = useRef(null)
 
   const onClose = () => {
-    videoRef?.current?.pause()
     handleClose()
   }
 
@@ -22,6 +21,12 @@ const VideoModal = ({
         {/* <video autoPlay controls ref={videoRef}>
           <source src="video-lp.mp4" />
         </video> */}
+        <iframe
+          src="https://drive.google.com/file/d/1HlOdtCUuZPtWnImoMaMuijB1vvehhouR/preview"
+          allow="autoplay"
+          ref={videoRef}
+          id="teste"
+        ></iframe>{' '}
       </S.Content>
     </S.ModalContainer>
   )

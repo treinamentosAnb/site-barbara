@@ -35,7 +35,7 @@ export const MobileContent = styled.div`
 `
 
 export const ButtonContainer = styled.div`
-  height: 68px;
+  height: 67px;
   width: 55%;
   display: flex;
   justify-content: center;
@@ -44,30 +44,30 @@ export const ButtonContainer = styled.div`
   cursor: pointer;
 
   @media (min-width: 520px) {
-    height: 68px;
+    height: 67px;
     margin-top: -72px;
   }
   @media (min-width: 660px) {
-    height: 94px;
+    height: 93px;
     margin-top: -98px;
   }
   @media (min-width: 768px) {
     width: 35%;
   }
   @media (min-width: 870px) {
-    height: 64px;
+    height: 63px;
     margin-top: -68px;
   }
   @media (min-width: 1000px) {
-    height: 80px;
+    height: 79px;
     margin-top: -84px;
   }
   @media (min-width: 1200px) {
-    height: 88px;
+    height: 87px;
     margin-top: -93px;
   }
   @media (min-width: 1440px) {
-    height: 98px;
+    height: 97px;
     margin-top: -102px;
   }
 `
@@ -119,34 +119,34 @@ export const QuestionsAndAnswersContainer = styled.div`
 
 export const VideoContainer = styled.div`
   width: 90%;
-  height: 195px;
+  height: 194px;
   position: relative;
   margin: -200px auto 0;
   cursor: pointer;
 
   @media (min-width: 425px) {
-    height: 230px;
+    height: 229px;
     margin-top: -234px;
   }
 
   @media (min-width: 520px) {
-    height: 280px;
+    height: 279px;
     margin-top: -284px;
   }
 
   @media (min-width: 640px) {
-    height: 340px;
+    height: 339px;
     margin-top: -344px;
   }
 
   @media (min-width: 768px) {
     width: 70%;
-    height: 402px;
+    height: 401px;
     margin-top: -406px;
   }
 
   @media (min-width: 1270px) {
-    height: 446px;
+    height: 445px;
     margin-top: -450px;
   }
 `
@@ -177,8 +177,11 @@ export const QuestionContainer = styled.div<{ isOpen: boolean }>`
   justify-content: space-between;
 
   span {
-    font-size: 16px;
+    font-size: 14px;
 
+    @media (min-width: 375px) {
+      font-size: 16px;
+    }
     @media (min-width: 768px) {
       font-size: 20px;
     }
@@ -196,7 +199,11 @@ export const AnswerContainer = styled.div<{ isOpen: boolean }>`
   transition: all ease-out 0.4s, opacity ease-out 0.2s, height ease-out 0.3s;
 
   span {
-    font-size: 12px;
+    font-size: 11px;
+
+    @media (min-width: 375px) {
+      font-size: 12px;
+    }
 
     @media (min-width: 768px) {
       font-size: 14px;
@@ -248,7 +255,7 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  video {
+  iframe {
     height: 70%;
     width: 100%;
   }
@@ -261,5 +268,6 @@ export const Content = styled.div`
 
   @media (min-width: 768px) {
     width: 70%;
+    height: 100%;
   }
 `
