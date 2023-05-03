@@ -10,6 +10,11 @@ const VideoModal = ({
   const videoRef: any = useRef(null)
 
   const onClose = () => {
+    const el: any = document.getElementsByClassName(
+      'ytp-play-button ytp-button'
+    )
+    console.log(el)
+    // el[0]?.click();
     handleClose()
   }
 
@@ -19,8 +24,7 @@ const VideoModal = ({
       <S.Content>
         <span>Para fechar basta clicar fora do video</span>
         <iframe
-          // src="https://drive.google.com/file/d/1HlOdtCUuZPtWnImoMaMuijB1vvehhouR/preview"
-          src="https://www.youtube.com/embed/3hng-hmSv2Y"
+          src="https://www.youtube.com/embed/2JycLIua72g"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ref={videoRef}
           allowFullScreen
