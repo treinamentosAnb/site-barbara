@@ -18,13 +18,12 @@ const VideoModal = ({
       <S.Overlay onClick={onClose} />
       <S.Content>
         <span>Para fechar basta clicar fora do video</span>
-        {/* <video autoPlay controls ref={videoRef}>
-          <source src="video-lp.mp4" />
-        </video> */}
         <iframe
-          src="https://drive.google.com/file/d/1HlOdtCUuZPtWnImoMaMuijB1vvehhouR/preview"
-          allow="autoplay"
+          // src="https://drive.google.com/file/d/1HlOdtCUuZPtWnImoMaMuijB1vvehhouR/preview"
+          src="https://www.youtube.com/embed/3hng-hmSv2Y"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ref={videoRef}
+          allowFullScreen
           id="teste"
         ></iframe>{' '}
       </S.Content>
